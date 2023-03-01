@@ -1,0 +1,548 @@
+/* RESET CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* hanh vi khi cuon tran web:  */
+    scroll-behavior: smooth;
+    /*  */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* 
+    PC: >= 1024px
+    Tablet: >= 740px & < 1042px
+    Mobile: <= 740px
+ */
+
+/* reponsive */
+
+
+/* common */
+.text-center{
+    text-align: center !important;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* chia doi */
+.col-haf {
+    width: 50%;
+}
+
+/* chia ba */
+.col-third {
+    width: 33.333333%;
+}
+.col-full {
+    width: 100%;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.mt-8{
+    margin-top: 8px !important;
+}
+
+.mt-16{
+    margin-top: 16px !important;
+}
+
+
+/* fix bug cua float left */
+.clear {
+    clear: both;
+}
+
+.text-color {
+    color: white !important;
+}
+
+
+
+/* The con nap cua the main chuon ra khoi the cha */
+/* #main{
+    overflow: hidden;
+} */
+
+
+
+
+#header {
+    /*  */
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    width: 100%;
+    background-color: #000;
+}
+
+
+#nav {
+    display: inline-block;
+
+}
+
+#nav,
+.subnav {
+    list-style: none;
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav>li>a {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav li:hover a,
+#nav>li:hover>a {
+    color: #000;
+    background-color: #ccc;
+    /* An theo line-height */
+    display: block;
+}
+
+#nav .subnav {
+    min-width: 160px;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0.3);
+
+}
+
+#nav .subnav a {
+    padding: 0 12px;
+    color: #000;
+    line-height: 38px;
+}
+
+#header .moblie-menu-btn,
+#header .search-btn{
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-btn:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+#header .moblie-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .moblie-menu-btn:hover{
+    background-color: #ccc;
+}
+
+
+#header .moblie-menu-btn:hover .menu-icon{
+    color: #000;
+}
+
+
+
+#header .menu-icon,
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/img/1.jpg') top center /cover no-repeat;
+}
+
+#slider .text-content {
+    padding: 47px;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#slider .tetx-heading {
+    font-weight: 500;
+    font-size: 30px;
+    /* margin-bottom: 25px; */
+    text-align: center;
+}
+
+#slider .text-desc {
+    font-size: 15px;
+}
+
+
+#content .content-section {
+    width: 800px;
+/* max-width manh hon: trong man hinh lon hon 800px thi content-section no se an thang thang width */
+    max-width: 100%;
+    /* padding phai dung truoc padding left va right neu khong left va right se khong hoat dong */
+    padding: 64px 0px 112px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+ 
+}
+
+#content .section-heading {
+    font-size: 30px;
+    text-align: center;
+    /* Lam chu nhat di */
+    font-weight: 500;
+    /* Cach cac chu ra xa hon */
+    letter-spacing: 4px;
+}
+
+#content .setion-subheading {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.60;
+}
+
+#content .about-section {
+    margin-top: 25px;
+    text-align: justify;
+    font-size: 15px;
+    /* cach deu chieu cao cac dong: tieng anh 1.4 tieng viet 1.6*/
+    line-height: 1.4;
+}
+
+#content .list-member {
+    margin-top: 48px;
+}
+
+#content .member-name {
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+#content .member-img {
+    width: 154px;
+    /* bo goc anh */
+    border-radius: 4px;
+}
+
+#content .tour-section {
+    background-color: #000;
+}
+
+#content .ticket {
+    margin-top: 40px;
+    background-color: #fff;
+}
+
+#content .ticket li {
+    list-style: none;
+    color: #757575;
+    font-size: 15px;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+#content .sold-out {
+    color: white;
+    background-color: #f44336;
+    padding: 3px 4px;
+    margin-left: 15px;
+}
+
+#content .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+    /* tao hinh tron */
+    border-radius: 50%;
+    margin-top: -2px;
+}
+
+.list-place {
+    font-size: 15px;
+    margin-top: 32px;
+    margin-bottom: 48px;
+}
+
+.place-img {
+    width: 100%;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.about-img {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.name-img {
+    font-size: 15px;
+}
+
+.subname-img {
+    opacity: 0.6;
+    padding: 16px 0;
+}
+
+.content-img {
+    margin-bottom: 18px;
+    line-height: 1.4;
+}
+
+.bt-click {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 12px 16px;
+    /* Fix bug padding */
+    display: inline-block;
+}
+
+.bt-click:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* cho thằng container nằm giữa thằng modal */
+    /* display: flex; */
+    /* thằng con container nằm giũa chiều cao thằng cha modal */
+    align-items: center;
+    /* Nằm giữa chiều ngang thằng cha */
+    justify-content: center;
+    display: none;
+}
+
+.modal.open{
+    display: flex;
+    
+}
+
+.modal-body{
+    margin: 20px;
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    /* để thích nghi khi thu nhỏ màn hình */
+    max-width: calc(100% -32px);
+    min-height: 200px;
+    position: relative;
+    /* chuyển động */
+    animation: modalFadeIn ease 0.7s;
+}
+
+.modal-header {
+    height: 130px;
+    background-color: #009688;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 1.4;
+}
+
+.modal-close i{
+    position: absolute;
+    padding: 12px;
+    right: 0;
+    color: #fff;
+}
+
+.modal-close:hover i{
+    background-color: #ddd;
+    color: #000;
+    cursor: pointer;
+}
+
+.header-icon{
+    margin-right: 20px;
+}
+
+.modal-header .text-tickets {
+    letter-spacing: 5px;
+}
+
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+input.modal-input {
+    border: 1px solid #cccc;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+
+#buy-stickets{
+    text-transform: uppercase;
+    width: 100%;
+    padding: 25px;
+    background-color: #009688;
+    color: #fff;
+    border-style: none;
+}
+
+#buy-stickets:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal-help{
+    margin: 20px 16px 20px 0;
+    float: right;
+}
+
+a.help{
+    text-decoration: none;
+    color: blue;
+}
+
+.contact-section {
+    background-color: #fff;
+}
+
+.contact-content{
+    margin-top: 48px;
+    line-height: 1.5;
+}
+
+
+.contact-info i[class*="ti"]{
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form{
+    font-size: 15px;
+    float: right;
+}
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form .form-submit-btn{
+    font-size: 15px;
+    color: #fff;
+    background-color: #000;
+    padding: 9px 14px;
+    float: right;
+    margin-left: 100px;
+}
+
+.form-submit-btn:hover{
+    background-color: #ccc;
+    cursor: pointer;
+    color: #000;
+}
+
+#footer {
+    /* position: relative; */
+    /* margin-top: 46px; */
+    padding-top: 50%;
+    /* background-color: #fff; */
+    background: url('/img/map.jpg') top center /cover no-repeat;  
+}
+
+.footer-icon
+{
+    padding: 64px 16px;
+   width: 100%;
+   text-align: center;
+   font-size: 20px;
+    
+}
+
+.footer-icon> a
+{
+    text-decoration: none;
+    
+}
+
+.footer-icon .sub-icon-footer{
+    margin-top: 10px;
+}
+
+@keyframes modalFadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

@@ -1,0 +1,71 @@
+/* PC */
+@media (min-width: 740px) and (max-width: 1023px){
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    
+}
+/* Mobile */
+@media (max-width: 740px){
+    .s-full-width{
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .s-col-full{
+        width: 100%;
+        padding: 0 8px;
+        margin-top: 16px;
+    }
+    #nav{
+        display: block;
+    }
+    #nav>li{
+        display: block;
+    }
+
+    #nav>li>a{
+        padding: 1px 24px   ;
+    }
+    #header .moblie-menu-btn{
+        display: block;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+    #header{
+        overflow: hidden;
+    }
+    /* lay con truc tiep dau tien cua nav */
+    #nav >li:first-child {
+        display: inline-block;
+    }
+
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
+    }
+
+    #nav .subnav a{
+        color: #fff;
+        padding: 0 26px ;
+    }
+
+    #content .mobile-member{
+        margin-top: 30px;
+        width: 100%;
+    }
+    #content .member-img{
+        width: 60%;
+    }
+    #slider .text-content,
+    #slider .tetx-heading{
+        display: none;
+    }
+    .contact-form{
+        padding: 10px;
+    }
+}
